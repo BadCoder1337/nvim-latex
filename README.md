@@ -1,34 +1,10 @@
 # NVIM-LaTeX
 
-A collection of LaTeX snippets and compilation actions.
+A collection of LaTeX snippets and compilation actions. Built with [TypeScriptToLua](https://typescripttolua.github.io/) scaffolded from [equals03/tstoluaplugin](https://github.com/equals03/tstoluaplugin).
 
-## What is NVIM-LaTeX?
-
-`tstoluaplugin.nvim` is nothing more than a proof of concept. It's the scaffolding of the transpiling toolchain thats just barely enough to function as the bare minimum.
-
-The transpiling is facilitated by way of the [TypeScriptToLua](https://typescripttolua.github.io/) project.
-
-Some notable(?) development features I wanted to support:
-
--   npm build
--   ts declaration files, both
-    -   via npm, and
-    -   custom
--   external lua references via
-    -   [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
--   great intellisense
--   eslint
--   prettier
-
-## What does this give you?
-
-A very simple plugin with some command completion. The completion and structure is _heavily inspired_ (as in stolen from) [@tjdevries](https://github.com/tjdevries)'s [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim).
-
-I've butchered what he did.
+Why TypeScript? I was supposed to create a `nvim` plugin, but I couldn't break up with cozy JS/TS syntax & tooling.
 
 ## Installation
-
-Clone the repo locally (eg. `~/development/tstoluaplugin.vim`).
 
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
@@ -46,9 +22,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'BadCoder1337/nvim-latex'
 ```
 
-Fire up `nvim`.
+Open `nvim`.
 
-The transpiled `lua` is in the repo so that the plugin can be run right after cloning, without having to "build" first.
+The built plugin is in the repo so that it can be run right after cloning.
 
 ## Usage
 
