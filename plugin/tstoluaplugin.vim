@@ -1,11 +1,11 @@
-if exists('g:loaded_tstoluaplugin')
+if exists('g:loaded_nvim_latex')
     finish
 endif
-let g:loaded_tstoluaplugin = 'yup'
+let g:loaded_nvim_latex = 'yes'
 
-function! s:tstoluaplugin_complete(arg,line,pos)
-    let l:builtin_list = luaeval('vim.tbl_keys(require("tstoluaplugin.builtin"))')
-    let l:options_list = luaeval('vim.tbl_keys(require("tstoluaplugin.config").values)')
+function! s:nvim_latex_complete(arg,line,pos)
+    let l:builtin_list = luaeval('vim.tbl_keys(require("builtin"))')
+    let l:options_list = luaeval('vim.tbl_keys(require("config").values)')
 
     let list = [extend(l:builtin_list, l:options_list)]
     if len(list) <= 0
@@ -25,4 +25,4 @@ function! s:tstoluaplugin_complete(arg,line,pos)
 endfunction
 
 " tstoluaplugin Commands with complete
-command! -nargs=* -complete=custom,s:tstoluaplugin_complete TsToLuaPlugin    lua require('tstoluaplugin.command').load_command(<f-args>)
+command! -nargs=* -complete=custom,s:nvim_latex_complete TsToLuaPlugin lua require('command').load_command(<f-args>)
