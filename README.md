@@ -1,8 +1,8 @@
-# tstoluaplugin.nvim
+# NVIM-LaTeX
 
-A quick proof of concept nvim Lua plugin transpiled from TypeScript.
+A collection of LaTeX snippets and compilation actions.
 
-## What is tstoluaplugin?
+## What is NVIM-LaTeX?
 
 `tstoluaplugin.nvim` is nothing more than a proof of concept. It's the scaffolding of the transpiling toolchain thats just barely enough to function as the bare minimum.
 
@@ -34,7 +34,7 @@ Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use {
-  '~/development/tstoluaplugin.vim',
+  'BadCoder1337/nvim-latex',
   requires = {{'nvim-lua/plenary.nvim'}}
 }
 ```
@@ -43,7 +43,7 @@ Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```viml
 Plug 'nvim-lua/plenary.nvim'
-Plug '~/development/tstoluaplugin.vim'
+Plug 'BadCoder1337/nvim-latex'
 ```
 
 Fire up `nvim`.
@@ -63,25 +63,29 @@ It should have a few "builtin" commands and two settings that will be printed to
 
 Commands available:  
 `shell`
-this will invoke a shell application and print its stdout. Additionally, it will also print the cmd and args used.  
+this will invoke a shell application and print its stdout. Additionally, it will also print the cmd and args used.
+
 ```vimL
 :TsToLuaPlugin shell ls -al
 ```
 
 `dump`  
-this will print out whatever arguments are supplied.  
+this will print out whatever arguments are supplied.
+
 ```vimL
 :TsToLuaPlugin dump 1 2 three four
 ```
 
 `not_implemented`  
-this will just use the `nivm` api to print a little error message saying "not implemented".  
+this will just use the `nivm` api to print a little error message saying "not implemented".
+
 ```vimL
 :TsToLuaPlugin not_implemented
 ```
 
 `config_value_(one|two)`  
-this will print the value of the config entry. You can override them using the `.setup()` method (below).  
+this will print the value of the config entry. You can override them using the `.setup()` method (below).
+
 ```vimL
 :TsToLuaPlugin config_value_one
 ```
