@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "lua": true
+    },
+    "Lua.diagnostics.disable": ["undefined-global", "lowercase-global", "deprecated"]
+}
