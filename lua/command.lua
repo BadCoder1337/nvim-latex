@@ -4,7 +4,7 @@ local config = require("config")
 local api = vim.api
 local function run_command(args)
     if not args.cmd then
-        api.nvim_err_writeln("[TsToLuaPlugin]: your command is missing!")
+        api.nvim_err_writeln("[LaTeX]: your command is missing!")
         return
     end
     local command = builtin[args.cmd]

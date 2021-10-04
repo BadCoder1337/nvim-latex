@@ -13,7 +13,7 @@ function! s:nvim_latex_complete(arg,line,pos)
     endif
 
     let l = split(a:line[:a:pos-1], '\%(\%(\%(^\|[^\\]\)\\\)\@<!\s\)\+', 1)
-    let n = len(l) - index(l, 'TsToLuaPlugin') - 2
+    let n = len(l) - index(l, 'LaTeX') - 2
 
     if n == 0
         return join(list[0],"\n")
@@ -25,4 +25,4 @@ function! s:nvim_latex_complete(arg,line,pos)
 endfunction
 
 " tstoluaplugin Commands with complete
-command! -nargs=* -complete=custom,s:nvim_latex_complete TsToLuaPlugin lua require('command').load_command(<f-args>)
+command! -nargs=* -complete=custom,s:nvim_latex_complete LaTeX lua require('command').load_command(<f-args>)

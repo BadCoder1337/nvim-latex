@@ -52,7 +52,7 @@ The transpiled `lua` is in the repo so that the plugin can be run right after cl
 
 ## Usage
 
-Try the command `:TsToLuaPlugin dump 1 2 3 4`
+Try the command `:LaTeX dump 1 2 3 4`
 to see if `tstoluaplugin` is installed correctly.
 
 You should see: `{ 1, 2, 3, 4 }` printed. So much wow.
@@ -66,28 +66,28 @@ Commands available:
 this will invoke a shell application and print its stdout. Additionally, it will also print the cmd and args used.
 
 ```vimL
-:TsToLuaPlugin shell ls -al
+:LaTeX shell ls -al
 ```
 
 `dump`  
 this will print out whatever arguments are supplied.
 
 ```vimL
-:TsToLuaPlugin dump 1 2 three four
+:LaTeX dump 1 2 three four
 ```
 
 `not_implemented`  
 this will just use the `nivm` api to print a little error message saying "not implemented".
 
 ```vimL
-:TsToLuaPlugin not_implemented
+:LaTeX not_implemented
 ```
 
 `config_value_(one|two)`  
 this will print the value of the config entry. You can override them using the `.setup()` method (below).
 
 ```vimL
-:TsToLuaPlugin config_value_one
+:LaTeX config_value_one
 ```
 
 ## Configuration
@@ -144,7 +144,3 @@ It seems to work though, so thats a plus.
 
 Even though I'm not sure why... Sure.
 Just open a pull request.
-
-Or don't.
-
-Your call.

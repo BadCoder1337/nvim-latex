@@ -4,7 +4,7 @@ import * as config from 'config';
 
 function run_command(args: Readonly<{ cmd: string; opts?: string[] }>): void {
     if (!args.cmd) {
-        api.nvim_err_writeln('[TsToLuaPlugin]: your command is missing!');
+        api.nvim_err_writeln('[LaTeX]: your command is missing!');
         return;
     }
 
