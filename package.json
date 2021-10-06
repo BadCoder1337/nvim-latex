@@ -2,18 +2,19 @@
     "name": "nvim-latex",
     "private": true,
     "scripts": {
-        "build": "tstl",
+        "build": "tstl --tstlVerbose",
         "dev": "tstl --watch",
         "trace": "tsc --traceResolution",
         "clean": "rm -rf ./lua"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.19.0",
-        "@typescript-eslint/parser": "^4.19.0",
-        "eslint": "^7.23.0",
-        "lua-types": "^2.9.1",
-        "prettier": "^2.2.1",
-        "prettier-eslint": "^12.0.0",
-        "typescript-to-lua": "^0.39.1"
-    }
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "eslint": "^7.32.0",
+        "lua-types": "^2.11.0",
+        "prettier": "^2.4.1",
+        "prettier-eslint": "^13.0.0",
+        "typescript-to-lua": "^1.0.1"
+    },
+    "packageManager": "yarn@3.0.2"
 }
