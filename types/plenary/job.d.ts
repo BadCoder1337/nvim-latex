@@ -1,5 +1,4 @@
-/** @noResolution */
-/** @noSelfInFile */
+/** @noResolution @noSelfInFile */
 declare module 'plenary.job' {
     type OnStart = () => void;
     type OnStdOut = (error: string, data: string, job?: Job) => void;
