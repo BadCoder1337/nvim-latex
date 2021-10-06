@@ -1,6 +1,6 @@
 # NVIM-LaTeX
 
-A collection of LaTeX snippets and compilation actions. Built with [TypeScriptToLua](https://typescripttolua.github.io/) scaffolded from [equals03/tstoluaplugin](https://github.com/equals03/tstoluaplugin).
+A collection of LaTeX snippets and compilation actions. Built with [TypeScriptToLua](https://typescripttolua.github.io/) scaffolded from [equals03/tstoluaplugin.nvim](https://github.com/equals03/tstoluaplugin.nvim).
 
 Why TypeScript? I was supposed to create a `nvim` plugin, but I couldn't break up with cozy JS/TS syntax & tooling.
 
